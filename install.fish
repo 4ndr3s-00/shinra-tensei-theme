@@ -1,7 +1,8 @@
 #!/usr/bin/env fish
 
 set REPO_URL "https://github.com/4ndr3s-00/shinra-tensei-theme.git"
-set DEST_DIR "$HOME/.vscode/extensions/shinra-tensei-theme"
+set DEST_DIR "$HOME/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0"
+set LEGACY_DIR "$HOME/.vscode/extensions/shinra-tensei-theme"
 
 set_color bfa5d9
 echo "   _____ __    _                    ______                      _ "
@@ -12,6 +13,14 @@ echo "/____/_/ /_/_/_/ /_/_/   \\__,_/   /_/  \\___/_/ /_/____/\\___/_/   "
 set_color normal
 
 echo "Instalando Shinra Tensei VS Code Theme..."
+
+# Limpiar versión legada si existía
+if test -d "$LEGACY_DIR"; and not test -d "$DEST_DIR"
+    echo "Migrando instalación anterior a formato de VS Code..."
+    mv "$LEGACY_DIR" "$DEST_DIR"
+else if test -d "$LEGACY_DIR"; and test -d "$DEST_DIR"
+    rm -rf "$LEGACY_DIR"
+end
 
 # 1. Clonar o actualizar repositorio
 if test -d "$DEST_DIR"
@@ -81,7 +90,7 @@ end
 
 set_color green
 echo ""
-echo "✔ ¡Extensión instalada con éxito en ~/.vscode/extensions/shinra-tensei-theme!"
+echo "✔ ¡Extensión instalada con éxito en ~/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0!"
 echo "✔ ¡Tema 'Shinra Tensei (Rinnegan)' activado automáticamente en tu settings.json!"
 set_color normal
 

@@ -2,7 +2,8 @@
 set -e
 
 REPO_URL="https://github.com/4ndr3s-00/shinra-tensei-theme.git"
-DEST_DIR="$HOME/.vscode/extensions/shinra-tensei-theme"
+DEST_DIR="$HOME/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0"
+LEGACY_DIR="$HOME/.vscode/extensions/shinra-tensei-theme"
 
 printf "\033[38;2;191;165;217m"
 cat << 'EOF'
@@ -16,7 +17,15 @@ printf "\033[0m\n"
 
 echo "Instalando Shinra Tensei VS Code Theme..."
 
-# 1. Clonar o actualizar el repositorio en ~/.vscode/extensions
+# Limpiar versión legada si existía con nombre sin formato
+if [ -d "$LEGACY_DIR" ] && [ ! -d "$DEST_DIR" ]; then
+    echo "Migrando instalación anterior a formato de VS Code..."
+    mv "$LEGACY_DIR" "$DEST_DIR"
+elif [ -d "$LEGACY_DIR" ] && [ -d "$DEST_DIR" ]; then
+    rm -rf "$LEGACY_DIR"
+fi
+
+# 1. Clonar o actualizar el repositorio en ~/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0
 if [ -d "$DEST_DIR" ]; then
     echo "Actualizando instalación existente en $DEST_DIR..."
     git -C "$DEST_DIR" pull --ff-only
@@ -88,7 +97,7 @@ if [ "$ACTIVATED" -eq 0 ]; then
 fi
 
 echo ""
-printf "\033[32m✔ ¡Extensión instalada con éxito en ~/.vscode/extensions/shinra-tensei-theme!\033[0m\n"
+printf "\033[32m✔ ¡Extensión instalada con éxito en ~/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0!\033[0m\n"
 printf "\033[32m✔ ¡Tema 'Shinra Tensei (Rinnegan)' activado automáticamente en tu settings.json!\033[0m\n"
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

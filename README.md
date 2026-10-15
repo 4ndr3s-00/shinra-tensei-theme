@@ -63,10 +63,10 @@ If you prefer to clone the repository manually:
 
 ```bash
 # Linux / macOS (Bash / Zsh / Fish)
-git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git ~/.vscode/extensions/shinra-tensei-theme
+git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git ~/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0
 
 # Windows (Command Prompt or PowerShell)
-git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git "%USERPROFILE%\.vscode\extensions\shinra-tensei-theme"
+git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git "%USERPROFILE%\.vscode\extensions\4ndr3s-00.shinra-tensei-theme-1.0.0"
 ```
 
 #### How to Activate the Theme in VS Code:

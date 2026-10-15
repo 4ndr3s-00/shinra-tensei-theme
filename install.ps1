@@ -1,7 +1,16 @@
 $repoUrl = "https://github.com/4ndr3s-00/shinra-tensei-theme.git"
-$destDir = "$env:USERPROFILE\.vscode\extensions\shinra-tensei-theme"
+$destDir = "$env:USERPROFILE\.vscode\extensions\4ndr3s-00.shinra-tensei-theme-1.0.0"
+$legacyDir = "$env:USERPROFILE\.vscode\extensions\shinra-tensei-theme"
 
 Write-Host "Installing Shinra Tensei VS Code Theme..." -ForegroundColor Magenta
+
+# Clean up legacy folder format if it exists
+if ((Test-Path $legacyDir) -and (-not (Test-Path $destDir))) {
+    Write-Host "Migrating legacy folder to official VS Code format..." -ForegroundColor Yellow
+    Rename-Item -Path $legacyDir -NewName "4ndr3s-00.shinra-tensei-theme-1.0.0"
+} elseif ((Test-Path $legacyDir) -and (Test-Path $destDir)) {
+    Remove-Item -Path $legacyDir -Recurse -Force
+}
 
 # 1. Clone or update repository
 if (Test-Path $destDir) {
