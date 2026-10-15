@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#281F38" />
+      <stop offset="70%" stop-color="#16131D" />
+      <stop offset="100%" stop-color="#0E0C12" />
+    </radialGradient>
+
+    <!-- Iris Gradient -->
+    <radialGradient id="irisGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4E3B68" />
+      <stop offset="40%" stop-color="#352649" />
+      <stop offset="85%" stop-color="#211730" />
+      <stop offset="100%" stop-color="#140E1E" />
+    </radialGradient>
+
+    <!-- Ripple Ring Glow Filter -->
+    <filter id="purpleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Container Base (Modern Rounded Squircle) -->
+  <rect x="8" y="8" width="240" height="240" rx="54" fill="url(#bgGlow)" stroke="#382C4E" stroke-width="2.5" />
+
+  <!-- Outer Chakra Ambient Halo -->
+  <circle cx="128" cy="128" r="102" fill="none" stroke="#A277FF" stroke-width="1" opacity="0.25" />
+
+  <!-- Eye Iris Base -->
+  <circle cx="128" cy="128" r="92" fill="url(#irisGrad)" stroke="#523D6F" stroke-width="2" />
+
+  <!-- Rinnegan Concentric Ripple Rings (Six Paths of Pain) -->
+  <!-- Ring 5 -->
+  <circle cx="128" cy="128" r="82" fill="none" stroke="#6C45BA" stroke-width="2.5" opacity="0.6" />
+
+  <!-- Ring 4 -->
+  <circle cx="128" cy="128" r="66" fill="none" stroke="#8758DE" stroke-width="3" opacity="0.75" />
+
+  <!-- Ring 3 -->
+  <circle cx="128" cy="128" r="50" fill="none" stroke="#9E6DF2" stroke-width="3.5" filter="url(#purpleGlow)" />
+
+  <!-- Ring 2 -->
+  <circle cx="128" cy="128" r="34" fill="none" stroke="#B88FFF" stroke-width="3.5" filter="url(#purpleGlow)" />
+
+  <!-- Ring 1 -->
+  <circle cx="128" cy="128" r="19" fill="none" stroke="#D7BFFF" stroke-width="3" filter="url(#purpleGlow)" />
+
+  <!-- Center Pupil -->
+  <circle cx="128" cy="128" r="7.5" fill="#0C0A10" stroke="#E6D6FF" stroke-width="1.5" />
+
+  <!-- Specular Reflection Glint -->
+  <circle cx="124" cy="124" r="2" fill="#FFFFFF" opacity="0.9" />
+</svg>
