@@ -1,0 +1,10 @@
+# Node / VS Code packaging
+node_modules/
+*.vsix
+.vscode-test/
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.log
+.history/

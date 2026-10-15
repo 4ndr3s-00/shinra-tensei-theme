@@ -1,0 +1,44 @@
+{
+  "name": "shinra-tensei-theme",
+  "displayName": "Shinra Tensei",
+  "description": "An elegant, dark obsidian and Rinnegan purple VS Code theme inspired by Pain (Naruto Shippuden).",
+  "version": "1.0.0",
+  "publisher": "4ndr3s-00",
+  "author": {
+    "name": "Andrés"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4ndr3s-00/shinra-tensei-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/4ndr3s-00/shinra-tensei-theme/issues"
+  },
+  "keywords": [
+    "theme",
+    "dark",
+    "purple",
+    "obsidian",
+    "pain",
+    "rinnegan",
+    "naruto",
+    "akatsuki",
+    "anime"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Shinra Tensei (Rinnegan)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shinra-tensei-color-theme.json"
+      }
+    ]
+  }
+}
