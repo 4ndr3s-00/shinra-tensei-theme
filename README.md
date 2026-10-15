@@ -20,14 +20,14 @@ Shinra Tensei uses a deep obsidian-purple canvas (`#131118`) that eliminates fla
 | :--- | :--- | :---: | :--- |
 | **Editor Background** | `#131118` | `■` | Deep obsidian canvas with a 5% cold purple undertone |
 | **Sidebar / Panels** | `#16131D` | `■` | Subtle elevation and panel contrast |
-| **Primary (Functions & Methods)** | `#A277FF` | `■` | **Rinnegan Purple** — Crisp, electric chakra accent |
-| **Variables & Parameters** | `#D4BFFF` | `■` | **Soft Lilac** — Gentle on the eyes for extended sessions |
-| **Keywords & Control Flow** | `#FF5370` | `■` | **Akatsuki Crimson** — Complementary contrast for syntax logic |
-| **Classes, Types & Interfaces** | `#79E6F3` | `■` | **Shinra Tensei Cyan** — Electric mist highlight |
-| **Strings & Templates** | `#FFCB6B` | `■` | **Yahiko Amber** — Warm sunset gold for strings and regex |
-| **Numbers & Booleans** | `#C3E88D` | `■` | **Chakra Green** — Distinct, vibrant numeric markers |
-| **Comments & Docstrings** | `#6C657E` | `■` | **Amegakure Rain Mist** — Muted violet-grey (italic) |
-| **Punctuation & Operators** | `#B5A8C8` | `■` | Clean, readable syntax delimiters |
+| **Primary (Functions & Methods)** | `#BFA5D9` | `■` | **Soothing Rinnegan Lilac** — Calm, elegant wisteria purple |
+| **Variables & Parameters** | `#E4DEEE` | `■` | **Mist White / Soft Lilac** — Effortless reading contrast |
+| **Keywords & Control Flow** | `#ED7882` | `■` | **Akatsuki Rose-Coral** — Distinct syntax logic without harsh glare |
+| **Classes, Types & Interfaces** | `#89DCEB` | `■` | **Calm Mist Cyan** — Soothing Arctic tone for architecture |
+| **Strings & Templates** | `#E5C07B` | `■` | **Soft Sunset Amber** — Warm gold for text and templates |
+| **Numbers & Booleans** | `#A6D189` | `■` | **Sage Chakra Green** — Grounded, natural numeric markers |
+| **Comments & Docstrings** | `#6F6880` | `■` | **Amegakure Rain Mist** — Soft muted violet-grey (italic) |
+| **Punctuation & Operators** | `#B3A7C2` | `■` | Balanced, refined syntax delimiters |
 
 ---
 
