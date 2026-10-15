@@ -31,30 +31,35 @@ Shinra Tensei uses a deep obsidian-purple canvas (`#131118`) that eliminates fla
 
 ---
 
-## 🚀 Easy Installation (One-Liner)
+## 🚀 Installation & Activation
 
-Choose your shell / operating system:
+### Automated One-Liner (Recommended)
 
-### 🐧 Linux / 🍎 macOS
+The automated script clones the repository and **automatically activates `Shinra Tensei (Rinnegan)` in your `settings.json`**:
 
-**Bash / Zsh**:
-```bash
-curl -fsSL https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.sh | sh
-```
+#### 🐧 Linux / 🍎 macOS
+* **Bash / Zsh**:
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.sh | sh
+  ```
+* **Fish Shell**:
+  ```fish
+  curl -fsSL https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.fish | fish
+  ```
 
-**Fish Shell**:
-```fish
-curl -fsSL https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.fish | fish
-```
-
-### 🪟 Windows (PowerShell)
+#### 🪟 Windows (PowerShell)
 ```powershell
 irm https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.ps1 | iex
 ```
 
+> **Note**: If VS Code is currently open when running the command, reload the window to apply changes:  
+> Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS) → type `Developer: Reload Window` → press `Enter`.
+
 ---
 
-### Manual Git Clone (All Platforms)
+### Manual Installation & Activation
+
+If you prefer to clone the repository manually:
 
 ```bash
 # Linux / macOS (Bash / Zsh / Fish)
@@ -64,7 +69,14 @@ git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git ~/.vscode/extensi
 git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git "%USERPROFILE%\.vscode\extensions\shinra-tensei-theme"
 ```
 
-Once installed, reload VS Code (`Ctrl+Shift+P` → `Developer: Reload Window`), press `Ctrl+K Ctrl+T`, and select **Shinra Tensei (Rinnegan)**.
+#### How to Activate the Theme in VS Code:
+1. Reload or restart VS Code (`Ctrl + Shift + P` → `Developer: Reload Window`).
+2. Press `Ctrl + K` then `Ctrl + T` (or `Cmd + K, Cmd + T` on macOS).
+3. Select **`Shinra Tensei (Rinnegan)`** from the list.
+4. *(Alternative)* Add this line to your `settings.json`:
+   ```json
+   "workbench.colorTheme": "Shinra Tensei (Rinnegan)"
+   ```
 
 ---
 
