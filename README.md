@@ -120,4 +120,4 @@ In your `settings.json`:
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
 
-Developed with passion by [Andrés](https://github.com/4ndr3s-00).
+Developed with passion by [4ndr3s-00](https://github.com/4ndr3s-00).
