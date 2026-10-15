@@ -31,28 +31,71 @@ Shinra Tensei uses a deep obsidian-purple canvas (`#131118`) that eliminates fla
 
 ---
 
-## 🚀 Installation
+## 🚀 Easy Installation (One-Liner)
 
-### Option 1: Manual Installation (Git Clone)
-Clone this repository directly into your VS Code extensions folder:
+Choose your shell / operating system:
 
+### 🐧 Linux / 🍎 macOS
+
+**Bash / Zsh**:
 ```bash
-# Linux / macOS
-git clone git@github.com:4ndr3s-00/shinra-tensei-theme.git ~/.vscode/extensions/shinra-tensei-theme
-
-# Windows (PowerShell)
-git clone git@github.com:4ndr3s-00/shinra-tensei-theme.git $HOME/.vscode/extensions/shinra-tensei-theme
+curl -fsSL https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.sh | sh
 ```
 
-Restart or reload VS Code (`Ctrl+Shift+P` → `Developer: Reload Window`).
+**Fish Shell**:
+```fish
+curl -fsSL https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.fish | fish
+```
 
-### Option 2: Package & Install `.vsix`
-If you have `@vscode/vsce` installed:
+### 🪟 Windows (PowerShell)
+```powershell
+irm https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.ps1 | iex
+```
+
+---
+
+### Manual Git Clone (All Platforms)
 
 ```bash
-npx @vscode/vsce package
-code --install-extension shinra-tensei-theme-1.0.0.vsix
+# Linux / macOS (Bash / Zsh / Fish)
+git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git ~/.vscode/extensions/shinra-tensei-theme
+
+# Windows (Command Prompt or PowerShell)
+git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git "%USERPROFILE%\.vscode\extensions\shinra-tensei-theme"
 ```
+
+Once installed, reload VS Code (`Ctrl+Shift+P` → `Developer: Reload Window`), press `Ctrl+K Ctrl+T`, and select **Shinra Tensei (Rinnegan)**.
+
+---
+
+## 🌫️ Simulated Blurred Pain Background (Optional)
+
+If you'd like the iconic Pain Chibaku Tensei blurred backdrop inside your editor (independent of your operating system wallpaper):
+
+1. Install the `shalldie.background` extension:
+   ```bash
+   code --install-extension shalldie.background
+   ```
+2. Add the following to your `settings.json`:
+   ```json
+   "background.enabled": true,
+   "background.useDefault": false,
+   "background.customImages": [
+     "file:///path/to/shinra-tensei-theme/assets/pain-blurred-bg.png"
+   ],
+   "background.style": {
+     "content": "''",
+     "pointer-events": "none",
+     "position": "absolute",
+     "z-index": "99999",
+     "width": "100%",
+     "height": "100%",
+     "background-position": "center",
+     "background-repeat": "no-repeat",
+     "background-size": "cover",
+     "opacity": 0.4
+   }
+   ```
 
 ---
 
