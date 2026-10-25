@@ -1,14 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
-  <!-- Rust cog wheel -->
-  <circle cx="12" cy="12" r="5" stroke="#E5C07B" stroke-width="2"/>
-  <circle cx="12" cy="12" r="2" fill="#BFA5D9"/>
-  <!-- Cog teeth -->
-  <line x1="12" y1="3" x2="12" y2="5" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
-  <line x1="12" y1="19" x2="12" y2="21" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
-  <line x1="3" y1="12" x2="5" y2="12" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
-  <line x1="19" y1="12" x2="21" y2="12" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
-  <line x1="5.6" y1="5.6" x2="7" y2="7" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
-  <line x1="17" y1="17" x2="18.4" y2="18.4" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
-  <line x1="5.6" y1="18.4" x2="7" y2="17" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
-  <line x1="17" y1="7" x2="18.4" y2="5.6" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+	<g fill="none" stroke="#E5C07B" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M15.5 9.5Q8 13.505.5 9.5l1-1-1-2 2-.5V4.5h2l.5-2 1.5 1 1.5-2 1.5 2 1.5-1 .5 2h2V6l2 .5-1 2z" />
+		<path d="M6.5 7.5a1 1 0 01-1 1 1 1 0 01-1-1 1 1 0 011-1 1 1 0 011 1m5 0a1 1 0 01-1 1 1 1 0 01-1-1 1 1 0 011-1 1 1 0 011 1M4 11.02c-.67.37-1.5.98-1.5 2.23s1.22 1.22 2 1.25v-2M12 11c.67.37 1.5 1 1.5 2.25s-1.22 1.22-2 1.25v-2" />
+	</g>
 </svg>

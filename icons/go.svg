@@ -1,9 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
-  <!-- Gopher outline / Go glyph -->
-  <path d="M4 12C4 8.5 7.5 7 11 7C14.5 7 15 8.5 15 9.5H9.5C9.5 11 11.5 11.5 13.5 11.5C14.5 11.5 15.5 11.2 16 10.8V13.2C15.2 13.8 13.8 14.2 12.2 14.2C7.5 14.2 4 11.5 4 12Z" stroke="#89DCEB" stroke-width="1.3" fill="#1C1826"/>
-  <circle cx="17.5" cy="11.5" r="3.5" stroke="#89DCEB" stroke-width="1.3"/>
-  <circle cx="17.5" cy="11.5" r="1.2" fill="#BFA5D9"/>
-  <!-- Speed lines -->
-  <line x1="2" y1="7" x2="5" y2="7" stroke="#89DCEB" stroke-width="1.3" stroke-linecap="round"/>
-  <line x1="1" y1="17" x2="6" y2="17" stroke="#89DCEB" stroke-width="1.3" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+	<path fill="none" stroke="#7dc4e4" stroke-linecap="round" stroke-linejoin="round" d="m15.48 8.06-4.85.48m4.85-.48a4.98 4.98 0 01-4.54 5.42 5 5 0 112.95-8.66l-1.7 1.84a2.5 2.5 0 00-4.18 2.06c.05.57.3 1.1.69 1.51.25.27 1 .83 1.78.82.8-.02 1.58-.25 2.07-.81 0 0 .8-.96.68-1.88M2.5 8.5l-2 .01m1.5 2h1.5m-2-3.99 2-.02" />
 </svg>
