@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Rust cog wheel -->
+  <circle cx="12" cy="12" r="5" stroke="#E5C07B" stroke-width="2"/>
+  <circle cx="12" cy="12" r="2" fill="#BFA5D9"/>
+  <!-- Cog teeth -->
+  <line x1="12" y1="3" x2="12" y2="5" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="12" y1="19" x2="12" y2="21" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="3" y1="12" x2="5" y2="12" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="19" y1="12" x2="21" y2="12" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="5.6" y1="5.6" x2="7" y2="7" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="17" y1="17" x2="18.4" y2="18.4" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="5.6" y1="18.4" x2="7" y2="17" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="17" y1="7" x2="18.4" y2="5.6" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,127 @@
+{
+  "iconDefinitions": {
+    "_folder": {
+      "iconPath": "./folder.svg"
+    },
+    "_folder_open": {
+      "iconPath": "./folder-open.svg"
+    },
+    "_folder_root": {
+      "iconPath": "./folder-root.svg"
+    },
+    "_file": {
+      "iconPath": "./file.svg"
+    },
+    "_file_js": {
+      "iconPath": "./javascript.svg"
+    },
+    "_file_ts": {
+      "iconPath": "./typescript.svg"
+    },
+    "_file_react": {
+      "iconPath": "./react.svg"
+    },
+    "_file_vue": {
+      "iconPath": "./vue.svg"
+    },
+    "_file_html": {
+      "iconPath": "./html.svg"
+    },
+    "_file_css": {
+      "iconPath": "./css.svg"
+    },
+    "_file_python": {
+      "iconPath": "./python.svg"
+    },
+    "_file_java": {
+      "iconPath": "./java.svg"
+    },
+    "_file_json": {
+      "iconPath": "./json.svg"
+    },
+    "_file_markdown": {
+      "iconPath": "./markdown.svg"
+    },
+    "_file_git": {
+      "iconPath": "./git.svg"
+    },
+    "_file_rust": {
+      "iconPath": "./rust.svg"
+    },
+    "_file_go": {
+      "iconPath": "./go.svg"
+    },
+    "_file_terminal": {
+      "iconPath": "./terminal.svg"
+    },
+    "_file_config": {
+      "iconPath": "./config.svg"
+    }
+  },
+  "folder": "_folder",
+  "folderExpanded": "_folder_open",
+  "rootFolder": "_folder_root",
+  "rootFolderExpanded": "_folder_root",
+  "file": "_file",
+  "fileExtensions": {
+    "js": "_file_js",
+    "mjs": "_file_js",
+    "cjs": "_file_js",
+    "ts": "_file_ts",
+    "mts": "_file_ts",
+    "cts": "_file_ts",
+    "jsx": "_file_react",
+    "tsx": "_file_react",
+    "vue": "_file_vue",
+    "html": "_file_html",
+    "htm": "_file_html",
+    "xhtml": "_file_html",
+    "css": "_file_css",
+    "scss": "_file_css",
+    "sass": "_file_css",
+    "less": "_file_css",
+    "postcss": "_file_css",
+    "py": "_file_python",
+    "pyw": "_file_python",
+    "ipynb": "_file_python",
+    "java": "_file_java",
+    "class": "_file_java",
+    "jar": "_file_java",
+    "gradle": "_file_java",
+    "json": "_file_json",
+    "jsonc": "_file_json",
+    "json5": "_file_json",
+    "md": "_file_markdown",
+    "markdown": "_file_markdown",
+    "mdx": "_file_markdown",
+    "rs": "_file_rust",
+    "go": "_file_go",
+    "sh": "_file_terminal",
+    "fish": "_file_terminal",
+    "bash": "_file_terminal",
+    "zsh": "_file_terminal",
+    "ps1": "_file_terminal",
+    "yaml": "_file_config",
+    "yml": "_file_config",
+    "toml": "_file_config",
+    "ini": "_file_config",
+    "conf": "_file_config",
+    "env": "_file_config",
+    "properties": "_file_config"
+  },
+  "fileNames": {
+    ".gitignore": "_file_git",
+    ".gitattributes": "_file_git",
+    ".gitmodules": "_file_git",
+    "package.json": "_file_react",
+    "tsconfig.json": "_file_ts",
+    "README.md": "_file_markdown",
+    "LICENSE": "_file_config",
+    "Dockerfile": "_file_terminal",
+    "dockerfile": "_file_terminal",
+    "docker-compose.yml": "_file_terminal",
+    "docker-compose.yaml": "_file_terminal",
+    "pom.xml": "_file_java",
+    "build.gradle": "_file_java"
+  }
+}

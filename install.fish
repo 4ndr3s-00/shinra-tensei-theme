@@ -50,15 +50,16 @@ if os.path.exists(p):
     except Exception:
         data = {}
 data['workbench.colorTheme'] = 'Shinra Tensei (Rinnegan)'
+data['workbench.iconTheme'] = 'shinra-tensei-icons'
 with open(p, 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 "
     else if command -v jq >/dev/null 2>&1
         if test -f "$target_file"
             set -l tmp (mktemp)
-            jq '."workbench.colorTheme" = "Shinra Tensei (Rinnegan)"' "$target_file" > "$tmp"; and mv "$tmp" "$target_file"
+            jq '."workbench.colorTheme" = "Shinra Tensei (Rinnegan)" | ."workbench.iconTheme" = "shinra-tensei-icons"' "$target_file" > "$tmp"; and mv "$tmp" "$target_file"
         else
-            echo '{"workbench.colorTheme": "Shinra Tensei (Rinnegan)"}' > "$target_file"
+            echo '{"workbench.colorTheme": "Shinra Tensei (Rinnegan)", "workbench.iconTheme": "shinra-tensei-icons"}' > "$target_file"
         end
     end
 end
@@ -91,7 +92,7 @@ end
 set_color green
 echo ""
 echo "✔ ¡Extensión instalada con éxito en ~/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0!"
-echo "✔ ¡Tema 'Shinra Tensei (Rinnegan)' activado automáticamente en tu settings.json!"
+echo "✔ ¡Tema 'Shinra Tensei (Rinnegan)' y paquete de iconos 'Shinra Tensei Icons' activados automáticamente en tu settings.json!"
 set_color normal
 
 echo ""

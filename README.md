@@ -111,15 +111,24 @@ If you'd like the iconic Pain Chibaku Tensei blurred backdrop inside your editor
 
 ---
 
-## 🎨 Recommended Configuration
+## 📂 Built-in Rinnegan Icon Theme (`Shinra Tensei Icons`)
 
-For the ultimate visual experience, pair **Shinra Tensei** with the **Catppuccin Macchiato** icon theme:
+Shinra Tensei comes with an official, built-in custom icon pack designed from the ground up:
+- **Folders**: Obsidian-purple surfaces with luminous lilac rims, root badges, and Rinnegan concentric ripple pupils.
+- **Files**: Tailored vector emblems for **JavaScript, TypeScript, React (JSX/TSX), Vue, HTML, CSS/SCSS, Python, Java/Spring, JSON, Markdown, Git, Rust, Go, Terminal/Shell**, and configurations.
+
+To enable manually:
+- Press `Ctrl + Shift + P` → `Preferences: File Icon Theme` → Select **`Shinra Tensei Icons`**.
+
+---
+
+## 🎨 Recommended Configuration
 
 In your `settings.json`:
 ```json
 {
   "workbench.colorTheme": "Shinra Tensei (Rinnegan)",
-  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.iconTheme": "shinra-tensei-icons",
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', monospace",
   "editor.fontLigatures": true,
   "editor.semanticHighlighting.enabled": true

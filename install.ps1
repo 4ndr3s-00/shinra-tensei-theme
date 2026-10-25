@@ -42,10 +42,11 @@ if (Test-Path $settingsPath) {
 }
 
 $settings["workbench.colorTheme"] = "Shinra Tensei (Rinnegan)"
+$settings["workbench.iconTheme"] = "shinra-tensei-icons"
 $settings | ConvertTo-Json -Depth 10 | Set-Content $settingsPath -Encoding UTF8
 
 Write-Host "`n✔ Extension installed in $destDir!" -ForegroundColor Green
-Write-Host "✔ 'Shinra Tensei (Rinnegan)' automatically activated in settings.json!" -ForegroundColor Green
+Write-Host "✔ 'Shinra Tensei (Rinnegan)' and 'Shinra Tensei Icons' automatically activated in settings.json!" -ForegroundColor Green
 
 Write-Host "`n================================================================="
 Write-Host "  HOW TO APPLY CHANGES:"

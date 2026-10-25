@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Markdown rectangle frame in Lilac -->
+  <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" fill="#1C1826" stroke="#BFA5D9" stroke-width="1.2"/>
+  <!-- M glyph -->
+  <path d="M5.5 15V9L8 12L10.5 9V15" stroke="#BFA5D9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Down arrow -->
+  <path d="M15.5 9V15M13.5 13L15.5 15L17.5 13" stroke="#89DCEB" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

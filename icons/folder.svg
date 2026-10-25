@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <path d="M2.5 5.5C2.5 4.67 3.17 4 4 4H9.2C9.65 4 10.08 4.2 10.36 4.54L11.8 6.27C12.08 6.6 12.51 6.8 12.96 6.8H20C20.83 6.8 21.5 7.47 21.5 8.3V18.5C21.5 19.33 20.83 20 20 20H4C3.17 20 2.5 19.33 2.5 18.5V5.5Z" fill="#1C1726" stroke="#BFA5D9" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Rinnegan concentric subtle curve accent on folder face -->
+  <path d="M7 14C8.5 12.8 11.2 12.2 13 12.2C14.8 12.2 17.5 12.8 19 14" stroke="#89DCEB" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="13" cy="14.5" r="1.2" fill="#BFA5D9"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Rinnegan pupil center -->
+  <circle cx="12" cy="12" r="2.2" fill="#BFA5D9"/>
+  <!-- Three revolving orbital electron loops -->
+  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#89DCEB" stroke-width="1.2" transform="rotate(0 12 12)"/>
+  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#BFA5D9" stroke-width="1.2" transform="rotate(60 12 12)"/>
+  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#89DCEB" stroke-width="1.2" transform="rotate(120 12 12)"/>
+</svg>

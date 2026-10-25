@@ -40,6 +40,13 @@
         "uiTheme": "vs-dark",
         "path": "./themes/shinra-tensei-color-theme.json"
       }
+    ],
+    "iconThemes": [
+      {
+        "id": "shinra-tensei-icons",
+        "label": "Shinra Tensei Icons",
+        "path": "./icons/shinra-tensei-icons.json"
+      }
     ]
   }
 }

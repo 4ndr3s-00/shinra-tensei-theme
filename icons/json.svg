@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Curly braces { } in Sage green -->
+  <path d="M8 4C6.5 4 6 5.2 6 6.5V10C6 11 5 12 4 12C5 12 6 13 6 14V17.5C6 18.8 6.5 20 8 20" stroke="#A6D189" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M16 4C17.5 4 18 5.2 18 6.5V10C18 11 19 12 20 12C19 12 18 13 18 14V17.5C18 18.8 17.5 20 16 20" stroke="#A6D189" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Central Rinnegan dot -->
+  <circle cx="12" cy="12" r="1.2" fill="#BFA5D9"/>
+</svg>

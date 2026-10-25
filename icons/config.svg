@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Config slider tracks -->
+  <line x1="4" y1="7" x2="20" y2="7" stroke="#6F6880" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="9" cy="7" r="2.2" fill="#BFA5D9" stroke="#15121D" stroke-width="1.2"/>
+  <line x1="4" y1="12" x2="20" y2="12" stroke="#6F6880" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="15" cy="12" r="2.2" fill="#ED7882" stroke="#15121D" stroke-width="1.2"/>
+  <line x1="4" y1="17" x2="20" y2="17" stroke="#6F6880" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="8" cy="17" r="2.2" fill="#89DCEB" stroke="#15121D" stroke-width="1.2"/>
+</svg>
