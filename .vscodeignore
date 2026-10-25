@@ -1,6 +1,3 @@
 .vscode/**
 .vscode-test/**
 .gitignore
-install.sh
-install.fish
-install.ps1

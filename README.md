@@ -47,54 +47,37 @@ It includes:
 
 ---
 
-## 🚀 Installation
+## 🚀 Install
 
-### Option 1: Automated One-Liner (Recommended)
+### Via VS Code Extensions Marketplace
 
-Clones the extension and automatically activates both **Shinra Tensei (Rinnegan)** and **Shinra Tensei Icons** in your `settings.json`:
+1. Open the Extensions sidebar (`Ctrl + Shift + X` or `Cmd + Shift + X`).
+2. Search for `Shinra Tensei`.
+3. Click **Install**.
 
-#### 🐧 Linux / 🍎 macOS
-* **Fish Shell**:
-  ```fish
-  curl -fsSL https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.fish | fish
-  ```
-* **Bash / Zsh**:
-  ```bash
-  curl -fsSL https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.sh | sh
-  ```
+### Quick Open
 
-#### 🪟 Windows (PowerShell)
-```powershell
-irm https://raw.githubusercontent.com/4ndr3s-00/shinra-tensei-theme/main/install.ps1 | iex
-```
+1. Launch VS Code Quick Open (`Ctrl + P` or `Cmd + P`).
+2. Paste the following command and press `Enter`:
+   ```text
+   ext install 4ndr3s-00.shinra-tensei-theme
+   ```
 
-> **Note**: If VS Code is open during installation, reload it by pressing `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS) → type `Developer: Reload Window` → press `Enter`.
+### Via VSIX (Direct Download)
 
----
-
-### Option 2: Download VSIX Package
-
-1. Head to [Releases](https://github.com/4ndr3s-00/shinra-tensei-theme/releases/latest) and download `shinra-tensei-theme-1.2.0.vsix`.
-2. In VS Code, open the Extensions view (`Ctrl + Shift + X`).
-3. Click the `...` (Views and More Actions) menu in the top right.
-4. Select **Install from VSIX...** and pick the downloaded `.vsix` file.
+1. Download [`shinra-tensei-theme-1.2.0.vsix`](https://github.com/4ndr3s-00/shinra-tensei-theme/releases/latest) from the latest release.
+2. Install via terminal:
+   ```bash
+   code --install-extension shinra-tensei-theme-1.2.0.vsix
+   ```
+   *(Or in VS Code: Extensions view `...` → **Install from VSIX...**)*
 
 ---
 
-### Option 3: Manual Git Clone
+## ⚡ Activation
 
-```bash
-# Linux & macOS
-git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git ~/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.2.0
-
-# Windows
-git clone https://github.com/4ndr3s-00/shinra-tensei-theme.git "%USERPROFILE%\.vscode\extensions\4ndr3s-00.shinra-tensei-theme-1.2.0"
-```
-
-To activate manually:
-- Open the Command Palette (`Ctrl + Shift + P` / `Cmd + Shift + P`).
-- Run `Preferences: Color Theme` → select **`Shinra Tensei (Rinnegan)`**.
-- Run `Preferences: File Icon Theme` → select **`Shinra Tensei Icons`**.
+1. **Color Theme**: Press `Ctrl + K` then `Ctrl + T` (or `Cmd + K, Cmd + T`) → Select **`Shinra Tensei (Rinnegan)`**.
+2. **File Icon Theme**: Press `Ctrl + Shift + P` → `Preferences: File Icon Theme` → Select **`Shinra Tensei Icons`**.
 
 ---
 
