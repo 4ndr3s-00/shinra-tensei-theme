@@ -11,7 +11,6 @@
 <p align="center">
   <a href="https://github.com/4ndr3s-00/shinra-tensei-theme/releases/latest"><img src="https://img.shields.io/github/v/release/4ndr3s-00/shinra-tensei-theme?style=flat-square&color=BFA5D9&label=Release" alt="Latest Release"></a>
   <a href="https://marketplace.visualstudio.com"><img src="https://img.shields.io/badge/VS%20Code-v1.60%2B-89DCEB?style=flat-square&logo=visualstudiocode&logoColor=131118" alt="VS Code Version"></a>
-  <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum"><img src="https://img.shields.io/badge/WCAG_2.1-AA_Compliant-A6D189?style=flat-square" alt="WCAG AA"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-ED7882?style=flat-square" alt="License"></a>
 </p>
 
@@ -145,12 +144,6 @@ If you would like the iconic Pain Chibaku Tensei blurred backdrop inside your ed
      "opacity": 0.4
    }
    ```
-
----
-
-## ♿ Accessibility [![W3C](https://img.shields.io/badge/WCAG_2.1_|_AA-131118?logo=w3c&logoColor=BFA5D9&style=flat-square)](https://www.w3.org/TR/WCAG21/#contrast-minimum)
-
-Foreground and background colors maintain an extraordinary **14.2:1 contrast ratio**, far exceeding the **WCAG 2.1 Level AA (4.5:1)** and **Level AAA (7:1)** standards for sustained reading without visual fatigue.
 
 ---
 
