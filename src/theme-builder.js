@@ -125,6 +125,27 @@ module.exports = function buildTheme(palette) {
       "editorBracketMatch.background": palette.primary + "33",
       "editorBracketMatch.border": palette.primary,
 
+      // Rinnegan Bracket Pair Colorizer (Concentric ripple levels)
+      "editorBracketHighlight.foreground1": palette.primary,
+      "editorBracketHighlight.foreground2": palette.secondary,
+      "editorBracketHighlight.foreground3": palette.mauve,
+      "editorBracketHighlight.foreground4": palette.teal,
+      "editorBracketHighlight.foreground5": palette.amber,
+      "editorBracketHighlight.foreground6": palette.tertiaryLight,
+      "editorBracketHighlight.unexpectedBracket.foreground": "#FF5555",
+      "editorBracketPairGuide.activeBackground1": palette.primary + "66",
+      "editorBracketPairGuide.activeBackground2": palette.secondary + "66",
+      "editorBracketPairGuide.activeBackground3": palette.mauve + "66",
+      "editorBracketPairGuide.activeBackground4": palette.teal + "66",
+      "editorBracketPairGuide.activeBackground5": palette.amber + "66",
+      "editorBracketPairGuide.activeBackground6": palette.tertiaryLight + "66",
+
+      // Inlay Hints (TypeScript, Rust, Go compiler type annotations)
+      "editorInlayHint.background": palette.bgElevated + "CC",
+      "editorInlayHint.foreground": palette.fgMuted,
+      "editorInlayHint.typeForeground": palette.secondary,
+      "editorInlayHint.parameterForeground": palette.mauve,
+
       // Editor Tabs & Groups
       "editorGroup.border": palette.border,
       "editorGroupHeader.tabsBackground": palette.bgDark,
@@ -219,6 +240,15 @@ module.exports = function buildTheme(palette) {
       "gitDecoration.deletedResourceForeground": palette.tertiary,
       "gitDecoration.untrackedResourceForeground": palette.secondary,
       "gitDecoration.ignoredResourceForeground": palette.fgMuted,
+
+      // Diff Editor & Code Reviews (Git / GitLens)
+      "diffEditor.insertedTextBackground": palette.green + "26",
+      "diffEditor.removedTextBackground": palette.tertiary + "26",
+      "diffEditor.insertedLineBackground": palette.green + "14",
+      "diffEditor.removedLineBackground": palette.tertiary + "14",
+      "diffEditorGutter.insertedLineBackground": palette.green + "40",
+      "diffEditorGutter.removedLineBackground": palette.tertiary + "40",
+      "diffEditor.diagonalFill": palette.border,
 
       // Breadcrumbs & Notifications
       "breadcrumb.foreground": palette.fgMuted,

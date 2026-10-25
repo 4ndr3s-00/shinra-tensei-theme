@@ -26,10 +26,12 @@
 
 It includes:
 - **Three Theme Flavors**: *Shinra Tensei (Rinnegan)* (Balanced), *Shinra Tensei Soft* (Amegakure Rain), and *Shinra Tensei Intense* (Chibaku Tensei).
+- **Rinnegan Bracket Pair Colorizer**: 6 harmonic concentric ripple levels eliminating VS Code's harsh default rainbow brackets.
+- **Git & Diff Editor Suite**: Smooth, low-fatigue translucent highlights for additions and deletions in Git reviews and GitLens.
 - **Semantic Highlighting V2**: LSP-powered distinctions for `const` vs `let`, native library types vs user models, generics (`<T, K, V>`), and runtime globals.
 - **Comprehensive Syntax Grammar**: Fine-tuned highlighting for modern HTML, CSS/SCSS, JavaScript, TypeScript, React, Next.js, Vue, Python, Rust, Go, and Java.
 - **Built-in `Shinra Tensei Icons` Suite**: 656 vector icons crafted on a native 16×16 pixel grid for razor-sharp visual clarity without distortion.
-- **Simulated Transparency / Blurred Backdrop**: Optional zero-transparency background support.
+- **Ports Ecosystem**: Official color schemes for **Kitty Terminal** and **Fish Shell** in [`ports/`](ports/).
 
 ---
 
@@ -80,10 +82,10 @@ It includes:
 
 ### Via VSIX (Direct Download)
 
-1. Download [`shinra-tensei-theme-1.3.0.vsix`](https://github.com/4ndr3s-00/shinra-tensei-theme/releases/latest) from the latest release.
+1. Download [`shinra-tensei-theme-1.4.0.vsix`](https://github.com/4ndr3s-00/shinra-tensei-theme/releases/latest) from the latest release.
 2. Install via terminal:
    ```bash
-   code --install-extension shinra-tensei-theme-1.3.0.vsix
+   code --install-extension shinra-tensei-theme-1.4.0.vsix
    ```
    *(Or in VS Code: Extensions view `...` → **Install from VSIX...**)*
 
@@ -175,6 +177,26 @@ If you would like the iconic Pain Chibaku Tensei blurred backdrop inside your ed
      "opacity": 0.4
    }
    ```
+
+---
+
+## 🌌 Terminal & Shell Ecosystem Ports
+
+Harmonize your full development workstation beyond VS Code. Official port definitions are available in [`ports/`](ports/):
+
+- **🐱 Kitty Terminal**: [`ports/kitty/shinra-tensei.conf`](ports/kitty/shinra-tensei.conf)
+  ```bash
+  cp ports/kitty/shinra-tensei.conf ~/.config/kitty/shinra-tensei.conf
+  echo "include shinra-tensei.conf" >> ~/.config/kitty/kitty.conf
+  ```
+
+- **🐟 Fish Shell**: [`ports/fish/shinra-tensei.theme`](ports/fish/shinra-tensei.theme)
+  ```fish
+  mkdir -p ~/.config/fish/themes
+  cp ports/fish/shinra-tensei.theme ~/.config/fish/themes/shinra-tensei.theme
+  fish_config theme choose shinra-tensei
+  fish_config theme save
+  ```
 
 ---
 

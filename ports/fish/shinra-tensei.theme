@@ -1,0 +1,37 @@
+# ==============================================================================
+# Shinra Tensei (Rinnegan) - Fish Shell Theme
+# Inspired by Pain (Nagato) from Naruto Shippuden
+# Repository: https://github.com/4ndr3s-00/shinra-tensei-theme
+# ==============================================================================
+
+# Syntax Highlighting Colors
+fish_color_normal e4deee
+fish_color_command bfa5d9 --bold
+fish_color_keyword ed7882
+fish_color_quote e5c07b
+fish_color_redirection c3a6e1
+fish_color_end b3a7c2
+fish_color_error ed7882 --bold
+fish_color_param 89dceb
+fish_color_comment 6f6880 --italics
+fish_color_selection --background=332944
+fish_color_search_match --background=272133
+fish_color_operator bfa5d9
+fish_color_escape 81d4c8
+fish_color_autosuggestion 695f77
+fish_color_cancel ed7882 --reverse
+fish_color_cwd a6d189
+fish_color_user bfa5d9
+fish_color_host 89dceb
+fish_color_host_remote 81d4c8
+fish_color_status ed7882
+
+# Pager (Tab completion) Colors
+fish_pager_color_progress 695f77
+fish_pager_color_prefix bfa5d9 --bold --underline
+fish_pager_color_completion e4deee
+fish_pager_color_description 695f77
+fish_pager_color_selected_background --background=332944
+fish_pager_color_selected_prefix bfa5d9
+fish_pager_color_selected_completion e4deee
+fish_pager_color_selected_description 89dceb
