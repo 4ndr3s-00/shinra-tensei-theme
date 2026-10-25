@@ -175,9 +175,12 @@
   },
   "tokenColors": [
     {
-      "name": "Comments",
+      "name": "Comments & Documentation",
       "scope": [
         "comment",
+        "comment.line",
+        "comment.block",
+        "comment.block.documentation",
         "punctuation.definition.comment"
       ],
       "settings": {
@@ -186,33 +189,21 @@
       }
     },
     {
-      "name": "Soft Rinnegan Lilac: Functions & Methods",
-      "scope": [
-        "entity.name.function",
-        "meta.function-call",
-        "support.function",
-        "support.function.builtin",
-        "entity.name.method",
-        "meta.method-call"
-      ],
-      "settings": {
-        "foreground": "#BFA5D9",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Soft Akatsuki Coral: Keywords & Control Flow",
+      "name": "Keywords & Storage Modifiers",
       "scope": [
         "keyword",
         "keyword.control",
         "keyword.control.flow",
         "keyword.control.import",
         "keyword.control.from",
+        "keyword.control.export",
         "keyword.control.conditional",
         "keyword.control.loop",
+        "keyword.control.trycatch",
         "keyword.operator.new",
         "keyword.operator.expression",
         "keyword.operator.logical",
+        "keyword.operator.delete",
         "storage",
         "storage.type",
         "storage.modifier"
@@ -222,7 +213,48 @@
       }
     },
     {
-      "name": "Calm Mist Cyan: Classes, Types & Interfaces",
+      "name": "Language Constants (this, super, self, arguments)",
+      "scope": [
+        "variable.language.this",
+        "variable.language.super",
+        "variable.language.arguments",
+        "variable.language.special.self.python",
+        "variable.parameter.function.language.special.self.python",
+        "variable.parameter.function.language.special.cls.python"
+      ],
+      "settings": {
+        "foreground": "#ED7882",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Functions & Method Declarations",
+      "scope": [
+        "entity.name.function",
+        "entity.name.method",
+        "support.function",
+        "meta.function-call",
+        "meta.method-call"
+      ],
+      "settings": {
+        "foreground": "#BFA5D9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "React Hooks & Framework Functions",
+      "scope": [
+        "support.function.react",
+        "entity.name.function.react",
+        "support.function.builtin"
+      ],
+      "settings": {
+        "foreground": "#BFA5D9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Classes, Interfaces, Types & Generics",
       "scope": [
         "entity.name.type",
         "entity.name.type.class",
@@ -231,14 +263,16 @@
         "support.class",
         "support.type",
         "entity.name.type.interface",
-        "entity.name.type.module"
+        "entity.name.type.module",
+        "entity.name.type.alias",
+        "entity.name.type.enum"
       ],
       "settings": {
         "foreground": "#89DCEB"
       }
     },
     {
-      "name": "Soft Sunset Amber: Strings",
+      "name": "Strings & Character Literals",
       "scope": [
         "string",
         "string.quoted",
@@ -252,21 +286,35 @@
       }
     },
     {
-      "name": "Sage Chakra Green: Numbers & Booleans",
+      "name": "String Interpolation & Template Punctuation",
+      "scope": [
+        "punctuation.definition.template-expression",
+        "punctuation.section.embedded",
+        "meta.template.expression"
+      ],
+      "settings": {
+        "foreground": "#ED7882"
+      }
+    },
+    {
+      "name": "Numbers, Units & Booleans",
       "scope": [
         "constant.numeric",
         "constant.numeric.integer",
         "constant.numeric.float",
+        "constant.numeric.hex",
         "constant.language.boolean",
         "constant.language.null",
-        "constant.language"
+        "constant.language.undefined",
+        "constant.language",
+        "keyword.other.unit"
       ],
       "settings": {
         "foreground": "#A6D189"
       }
     },
     {
-      "name": "Mist White / Soft Lilac: Variables & Parameters",
+      "name": "Variables & Parameters",
       "scope": [
         "variable",
         "variable.other",
@@ -279,24 +327,24 @@
       }
     },
     {
-      "name": "Soft Mauve: Object Properties & Decorators",
+      "name": "Object Keys & Properties",
       "scope": [
+        "meta.object-literal.key",
         "variable.other.property",
         "variable.other.object.property",
         "support.type.property-name",
-        "meta.property-name",
-        "entity.other.attribute-name",
-        "meta.decorator",
-        "tag.decorator.entity.name"
+        "meta.property-name"
       ],
       "settings": {
         "foreground": "#C3A6E1"
       }
     },
     {
-      "name": "Tags (HTML/JSX)",
+      "name": "HTML & JSX Native Tags",
       "scope": [
         "entity.name.tag",
+        "entity.name.tag.html",
+        "entity.name.tag.structure.any.html",
         "meta.tag.sgml",
         "punctuation.definition.tag"
       ],
@@ -305,13 +353,183 @@
       }
     },
     {
-      "name": "Attributes (HTML/CSS)",
+      "name": "React / Vue / Svelte Custom Component Tags",
+      "scope": [
+        "support.class.component",
+        "entity.name.tag.custom",
+        "entity.name.tag.tsx",
+        "entity.name.tag.jsx",
+        "meta.tag.custom"
+      ],
+      "settings": {
+        "foreground": "#89DCEB",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "HTML & JSX Attributes",
       "scope": [
         "entity.other.attribute-name",
-        "support.type.vendor-prefix"
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.jsx",
+        "entity.other.attribute-name.tsx"
+      ],
+      "settings": {
+        "foreground": "#C3A6E1",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Property Names",
+      "scope": [
+        "support.type.property-name.css",
+        "support.type.property-name.scss",
+        "support.type.property-name.less",
+        "meta.property-name.css"
+      ],
+      "settings": {
+        "foreground": "#89DCEB"
+      }
+    },
+    {
+      "name": "CSS Property Values & Constants",
+      "scope": [
+        "support.constant.property-value.css",
+        "support.constant.property-value.scss",
+        "meta.property-value.css",
+        "support.constant.font-name"
       ],
       "settings": {
         "foreground": "#E5C07B"
+      }
+    },
+    {
+      "name": "CSS Class Selectors",
+      "scope": [
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.class.scss"
+      ],
+      "settings": {
+        "foreground": "#A6D189"
+      }
+    },
+    {
+      "name": "CSS ID Selectors",
+      "scope": [
+        "entity.other.attribute-name.id.css",
+        "entity.other.attribute-name.id.scss"
+      ],
+      "settings": {
+        "foreground": "#BFA5D9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS Pseudo-Classes & Pseudo-Elements",
+      "scope": [
+        "entity.other.attribute-name.pseudo-class.css",
+        "entity.other.attribute-name.pseudo-element.css",
+        "entity.other.attribute-name.pseudo-class.scss",
+        "entity.other.attribute-name.pseudo-element.scss"
+      ],
+      "settings": {
+        "foreground": "#ED7882",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Variables & At-Rules",
+      "scope": [
+        "variable.css",
+        "variable.argument.css",
+        "keyword.control.at-rule.css",
+        "keyword.control.at-rule.media.css",
+        "keyword.control.at-rule.keyframes.css"
+      ],
+      "settings": {
+        "foreground": "#BFA5D9"
+      }
+    },
+    {
+      "name": "Python & Java Annotations and Decorators",
+      "scope": [
+        "entity.name.function.decorator.python",
+        "punctuation.definition.decorator.python",
+        "meta.decorator",
+        "storage.type.annotation.java",
+        "punctuation.definition.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#C3A6E1",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Python Magic Methods & Builtins",
+      "scope": [
+        "support.function.magic.python",
+        "entity.name.function.magic.python",
+        "support.function.builtin.python",
+        "support.type.python"
+      ],
+      "settings": {
+        "foreground": "#89DCEB"
+      }
+    },
+    {
+      "name": "Python Docstrings",
+      "scope": [
+        "string.quoted.docstring.multi.python",
+        "string.quoted.docstring.single.python"
+      ],
+      "settings": {
+        "foreground": "#6F6880",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Java Primitive Types & Modifiers",
+      "scope": [
+        "storage.type.primitive.java",
+        "storage.type.primitive.array.java",
+        "storage.modifier.java",
+        "storage.modifier.package.java",
+        "storage.modifier.import.java"
+      ],
+      "settings": {
+        "foreground": "#ED7882"
+      }
+    },
+    {
+      "name": "Java Classes, Interfaces & Enums",
+      "scope": [
+        "entity.name.type.class.java",
+        "entity.name.type.interface.java",
+        "storage.type.object.array.java",
+        "constant.other.enum.java"
+      ],
+      "settings": {
+        "foreground": "#89DCEB"
+      }
+    },
+    {
+      "name": "JSON & YAML Object Keys",
+      "scope": [
+        "support.type.property-name.json",
+        "entity.name.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#89DCEB"
+      }
+    },
+    {
+      "name": "Regular Expressions",
+      "scope": [
+        "string.regexp",
+        "constant.character.escape.backslash.regexp"
+      ],
+      "settings": {
+        "foreground": "#81D4C8"
       }
     },
     {
@@ -320,6 +538,8 @@
         "keyword.operator",
         "keyword.operator.assignment",
         "keyword.operator.arithmetic",
+        "keyword.operator.comparison",
+        "keyword.operator.ternary",
         "punctuation.separator",
         "punctuation.terminator",
         "punctuation.accessor"
@@ -329,10 +549,12 @@
       }
     },
     {
-      "name": "Brackets & Curly Braces",
+      "name": "Brackets, Curly Braces & Parentheses",
       "scope": [
         "punctuation.section",
-        "punctuation.definition.parameters"
+        "punctuation.definition.parameters",
+        "punctuation.definition.block",
+        "meta.brace"
       ],
       "settings": {
         "foreground": "#D9CEE8"
@@ -369,6 +591,16 @@
       "settings": {
         "foreground": "#ED7882",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Code Blocks & Inline Code",
+      "scope": [
+        "markup.raw.inline",
+        "markup.raw.block"
+      ],
+      "settings": {
+        "foreground": "#A6D189"
       }
     }
   ]
