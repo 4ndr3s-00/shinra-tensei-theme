@@ -2,6 +2,81 @@
   "name": "Shinra Tensei Soft (Amegakure Rain)",
   "type": "dark",
   "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "variable.readonly": {
+      "foreground": "#DDD7E7"
+    },
+    "variable.readonly.defaultLibrary": {
+      "foreground": "#7ECCD8",
+      "fontStyle": "bold"
+    },
+    "variable": {
+      "foreground": "#DDD7E7"
+    },
+    "parameter": {
+      "foreground": "#756C83",
+      "fontStyle": "italic"
+    },
+    "type.defaultLibrary": {
+      "foreground": "#7ECCD8",
+      "fontStyle": "bold"
+    },
+    "class.defaultLibrary": {
+      "foreground": "#7ECCD8",
+      "fontStyle": "bold"
+    },
+    "interface": {
+      "foreground": "#7ECCD8"
+    },
+    "type": {
+      "foreground": "#7ECCD8"
+    },
+    "typeParameter": {
+      "foreground": "#DCB772",
+      "fontStyle": "italic"
+    },
+    "enum": {
+      "foreground": "#7ECCD8",
+      "fontStyle": "bold"
+    },
+    "enumMember": {
+      "foreground": "#9EC981",
+      "fontStyle": "bold"
+    },
+    "function.defaultLibrary": {
+      "foreground": "#B59CCE",
+      "fontStyle": "bold"
+    },
+    "method.defaultLibrary": {
+      "foreground": "#B59CCE",
+      "fontStyle": "bold"
+    },
+    "function": {
+      "foreground": "#B59CCE",
+      "fontStyle": "bold"
+    },
+    "method": {
+      "foreground": "#B59CCE",
+      "fontStyle": "bold"
+    },
+    "property.readonly": {
+      "foreground": "#B99CD7"
+    },
+    "property": {
+      "foreground": "#B99CD7"
+    },
+    "decorator": {
+      "foreground": "#B99CD7",
+      "fontStyle": "italic"
+    },
+    "macro": {
+      "foreground": "#E06D77",
+      "fontStyle": "bold"
+    },
+    "namespace": {
+      "foreground": "#7ECCD8"
+    }
+  },
   "colors": {
     "focusBorder": "#B59CCE",
     "foreground": "#DDD7E7",

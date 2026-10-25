@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="920" height="480" fill="none">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BFA5D9" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#89DCEB" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ED7882" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Backdrop Glow -->
+  <rect x="20" y="20" width="880" height="440" rx="14" fill="url(#glow)"/>
+
+  <!-- Main Window Frame -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="20" width="880" height="440" rx="12" fill="#131118" stroke="#2B2338" stroke-width="1.5"/>
+    
+    <!-- Titlebar -->
+    <path d="M20 32C20 25.37 25.37 20 32 20H888C894.63 20 900 25.37 900 32V56H20V32Z" fill="#16131D" stroke="#2B2338" stroke-width="1"/>
+    
+    <!-- Window Controls -->
+    <circle cx="42" cy="38" r="6" fill="#ED7882"/>
+    <circle cx="62" cy="38" r="6" fill="#E5C07B"/>
+    <circle cx="82" cy="38" r="6" fill="#A6D189"/>
+    
+    <!-- Title -->
+    <text x="460" y="42" text-anchor="middle" fill="#BFA5D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">Shinra Tensei (Rinnegan) — App.tsx</text>
+    
+    <!-- Sidebar -->
+    <rect x="20" y="56" width="220" height="376" fill="#16131D" stroke="#201B28" stroke-width="1"/>
+    
+    <!-- Sidebar Header -->
+    <text x="36" y="80" fill="#695F77" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">EXPLORER</text>
+    
+    <!-- Sidebar Tree Items with Icons -->
+    <!-- Folder src (Frontend) -->
+    <path stroke="#89DCEB" stroke-width="1" d="M38 104H48c.6 0 1 .4 1 1v.5m-5 5h-4c-.6 0-1-.4-1-1v-6c0-.4.3-.7.7-.7h3.5c.4 0 .7.3.7.7v.7" fill="none"/>
+    <text x="56" y="109" fill="#E4DEEE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">src</text>
+    
+    <!-- Folder components -->
+    <path stroke="#C3A6E1" stroke-width="1" d="M50 128h8c.5 0 .8.3.8.8v.4m-4 4h-3.2c-.5 0-.8-.3-.8-.8v-4.8c0-.3.2-.5.5-.5h2.8c.3 0 .5.2.5.5v.5" fill="none"/>
+    <text x="66" y="133" fill="#E4DEEE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">components</text>
+    
+    <!-- File Header.tsx (React) -->
+    <circle cx="70" cy="154" r="1.2" fill="#BFA5D9"/>
+    <ellipse cx="70" cy="154" rx="4.5" ry="1.8" stroke="#89DCEB" stroke-width="0.8" fill="none"/>
+    <ellipse cx="70" cy="154" rx="4.5" ry="1.8" stroke="#BFA5D9" stroke-width="0.8" fill="none" transform="rotate(60 70 154)"/>
+    <text x="80" y="157" fill="#BFA5D9" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600">Header.tsx</text>
+    
+    <!-- Folder api (Backend) -->
+    <path stroke="#BFA5D9" stroke-width="1" d="M50 176h8c.5 0 .8.3.8.8v.4m-4 4h-3.2c-.5 0-.8-.3-.8-.8v-4.8c0-.3.2-.5.5-.5h2.8c.3 0 .5.2.5.5v.5" fill="none"/>
+    <text x="66" y="181" fill="#E4DEEE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">api</text>
+    
+    <!-- File server.py (Python) -->
+    <rect x="66" y="196" width="7" height="7" rx="1.5" stroke="#A6D189" stroke-width="0.8" fill="none"/>
+    <text x="80" y="204" fill="#E4DEEE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">server.py</text>
+    
+    <!-- File Application.java (Java) -->
+    <path d="M68 221c-.8 1 1 1.8 0 2.5m2-2.5c-.8 1 1 1.8 0 2.5" stroke="#ED7882" stroke-width="0.8" fill="none"/>
+    <text x="80" y="228" fill="#E4DEEE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">Application.java</text>
+    
+    <!-- File package.json -->
+    <text x="56" y="252" fill="#E5C07B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">{ }</text>
+    <text x="76" y="252" fill="#E4DEEE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">package.json</text>
+    
+    <!-- Editor Tabs Header -->
+    <rect x="240" y="56" width="660" height="34" fill="#100E14"/>
+    
+    <!-- Active Tab -->
+    <rect x="240" y="56" width="160" height="34" fill="#131118"/>
+    <line x1="240" y1="56" x2="400" y2="56" stroke="#BFA5D9" stroke-width="2"/>
+    <circle cx="258" cy="73" r="1.2" fill="#BFA5D9"/>
+    <ellipse cx="258" cy="73" rx="4.5" ry="1.8" stroke="#89DCEB" stroke-width="0.8" fill="none"/>
+    <text x="270" y="77" fill="#BFA5D9" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="bold">App.tsx</text>
+    
+    <!-- Inactive Tab -->
+    <rect x="400" y="56" width="140" height="34" fill="#100E14"/>
+    <text x="424" y="77" fill="#695F77" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">server.py</text>
+
+    <!-- Editor Line Numbers -->
+    <g fill="#554C64" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" text-anchor="end">
+      <text x="272" y="118">1</text>
+      <text x="272" y="140">2</text>
+      <text x="272" y="162">3</text>
+      <text x="272" y="184">4</text>
+      <text x="272" y="206">5</text>
+      <text x="272" y="228">6</text>
+      <text x="272" y="250">7</text>
+      <text x="272" y="272">8</text>
+      <text x="272" y="294">9</text>
+      <text x="272" y="316">10</text>
+      <text x="272" y="338">11</text>
+      <text x="272" y="360">12</text>
+      <text x="272" y="382">13</text>
+    </g>
+
+    <!-- Active Line Highlight -->
+    <rect x="282" y="214" width="618" height="20" fill="#201B2B" opacity="0.6"/>
+
+    <!-- Code Content -->
+    <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12.5">
+      <!-- Line 1: Comment -->
+      <text x="290" y="118" fill="#6F6880" font-style="italic">// 神羅天征 — Universal Deva Path Architecture</text>
+      
+      <!-- Line 2: Import React -->
+      <text x="290" y="140">
+        <tspan fill="#ED7882">import</tspan>
+        <tspan fill="#E4DEEE"> React, { </tspan>
+        <tspan fill="#BFA5D9" font-weight="bold">useState</tspan>
+        <tspan fill="#E4DEEE">, </tspan>
+        <tspan fill="#BFA5D9" font-weight="bold">useEffect</tspan>
+        <tspan fill="#E4DEEE"> } </tspan>
+        <tspan fill="#ED7882">from</tspan>
+        <tspan fill="#E5C07B"> 'react'</tspan>
+        <tspan fill="#B3A7C2">;</tspan>
+      </text>
+
+      <!-- Line 3: Interface -->
+      <text x="290" y="162">
+        <tspan fill="#ED7882">export interface</tspan>
+        <tspan fill="#89DCEB"> ShinraState</tspan>
+        <tspan fill="#E5C07B" font-style="italic">&lt;T&gt;</tspan>
+        <tspan fill="#D9CEE8"> {</tspan>
+        <tspan fill="#C3A6E1" font-style="italic"> chakra</tspan>
+        <tspan fill="#B3A7C2">: </tspan>
+        <tspan fill="#89DCEB">T</tspan>
+        <tspan fill="#B3A7C2">; </tspan>
+        <tspan fill="#C3A6E1" font-style="italic">active</tspan>
+        <tspan fill="#B3A7C2">: </tspan>
+        <tspan fill="#A6D189">boolean</tspan>
+        <tspan fill="#D9CEE8">; }</tspan>
+      </text>
+
+      <!-- Line 4: Empty -->
+
+      <!-- Line 5: Component Def -->
+      <text x="290" y="206">
+        <tspan fill="#ED7882">export const</tspan>
+        <tspan fill="#BFA5D9" font-weight="bold"> DevaPath</tspan>
+        <tspan fill="#B3A7C2">: </tspan>
+        <tspan fill="#89DCEB">React.FC</tspan>
+        <tspan fill="#B3A7C2"> = () =&gt; {</tspan>
+      </text>
+
+      <!-- Line 6: State Hook -->
+      <text x="310" y="228">
+        <tspan fill="#ED7882">const</tspan>
+        <tspan fill="#E4DEEE"> [power, setPower] = </tspan>
+        <tspan fill="#BFA5D9" font-weight="bold">useState</tspan>
+        <tspan fill="#D9CEE8">(</tspan>
+        <tspan fill="#A6D189">5000</tspan>
+        <tspan fill="#D9CEE8">)</tspan>
+        <tspan fill="#B3A7C2">;</tspan>
+      </text>
+
+      <!-- Line 7: Effect Hook -->
+      <text x="310" y="250">
+        <tspan fill="#BFA5D9" font-weight="bold">useEffect</tspan>
+        <tspan fill="#D9CEE8">(() =&gt; {</tspan>
+      </text>
+
+      <!-- Line 8: Console log / fetch -->
+      <text x="330" y="272">
+        <tspan fill="#89DCEB" font-weight="bold">console</tspan>
+        <tspan fill="#B3A7C2">.</tspan>
+        <tspan fill="#BFA5D9" font-weight="bold">log</tspan>
+        <tspan fill="#D9CEE8">(</tspan>
+        <tspan fill="#E5C07B">`Shinra Tensei: Power level = ${</tspan>
+        <tspan fill="#E4DEEE">power</tspan>
+        <tspan fill="#E5C07B">}`</tspan>
+        <tspan fill="#D9CEE8">)</tspan>
+        <tspan fill="#B3A7C2">;</tspan>
+      </text>
+
+      <!-- Line 9: End Effect -->
+      <text x="310" y="294">
+        <tspan fill="#D9CEE8">}, [</tspan>
+        <tspan fill="#E4DEEE">power</tspan>
+        <tspan fill="#D9CEE8">]);</tspan>
+      </text>
+
+      <!-- Line 10: JSX Return -->
+      <text x="310" y="316">
+        <tspan fill="#ED7882">return</tspan>
+        <tspan fill="#D9CEE8"> (</tspan>
+      </text>
+
+      <!-- Line 11: JSX Tags -->
+      <text x="330" y="338">
+        <tspan fill="#B3A7C2">&lt;</tspan>
+        <tspan fill="#89DCEB" font-weight="bold">PainAltar</tspan>
+        <tspan fill="#C3A6E1" font-style="italic"> realm</tspan>
+        <tspan fill="#B3A7C2">=</tspan>
+        <tspan fill="#E5C07B">"Amegakure"</tspan>
+        <tspan fill="#C3A6E1" font-style="italic"> awakened</tspan>
+        <tspan fill="#B3A7C2">=</tspan>
+        <tspan fill="#D9CEE8">{</tspan>
+        <tspan fill="#A6D189">true</tspan>
+        <tspan fill="#D9CEE8">}</tspan>
+        <tspan fill="#B3A7C2">&gt;</tspan>
+      </text>
+
+      <!-- Line 12: JSX Child -->
+      <text x="350" y="360">
+        <tspan fill="#B3A7C2">&lt;</tspan>
+        <tspan fill="#ED7882">span</tspan>
+        <tspan fill="#C3A6E1" font-style="italic"> className</tspan>
+        <tspan fill="#B3A7C2">=</tspan>
+        <tspan fill="#E5C07B">"rinnegan-core"</tspan>
+        <tspan fill="#B3A7C2">&gt;</tspan>
+        <tspan fill="#E4DEEE">World shall know true pain</tspan>
+        <tspan fill="#B3A7C2">&lt;/</tspan>
+        <tspan fill="#ED7882">span</tspan>
+        <tspan fill="#B3A7C2">&gt;</tspan>
+      </text>
+
+      <!-- Line 13: Closing Tags -->
+      <text x="330" y="382">
+        <tspan fill="#B3A7C2">&lt;/</tspan>
+        <tspan fill="#89DCEB" font-weight="bold">PainAltar</tspan>
+        <tspan fill="#B3A7C2">&gt;</tspan>
+      </text>
+    </g>
+
+    <!-- Status Bar -->
+    <path d="M20 432H900V448C900 454.63 894.63 460 888 460H32C25.37 460 20 454.63 20 448V432Z" fill="#16131D" stroke="#2B2338" stroke-width="1"/>
+    <!-- Git Branch info -->
+    <path d="M34 446c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1s1 .4 1 1v4c0 .6-.4 1-1 1zm0-4.5c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5zm4 3.5c-.6 0-1-.4-1-1 0-.4.2-.7.5-.9v-.7c0-.8-.7-1.4-1.5-1.4h-.5v.7c0 .6-.4 1-1 1s-1-.4-1-1 .4-1 1-1h1.5c1.4 0 2.5 1.1 2.5 2.4v.9c.3.2.5.5.5.9 0 .6-.4 1-1 1z" fill="#BFA5D9"/>
+    <text x="44" y="449" fill="#BFA5D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">main*</text>
+    <text x="96" y="449" fill="#A6D189" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">0 ⨂ 0 ⚠</text>
+    
+    <text x="820" y="449" fill="#BFA5D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">UTF-8</text>
+    <text x="868" y="449" fill="#89DCEB" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">TypeScript JSX</text>
+  </g>
+</svg>

@@ -2,6 +2,81 @@
   "name": "Shinra Tensei Intense (Chibaku Tensei)",
   "type": "dark",
   "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "variable.readonly": {
+      "foreground": "#F4EFFC"
+    },
+    "variable.readonly.defaultLibrary": {
+      "foreground": "#9AEBFC",
+      "fontStyle": "bold"
+    },
+    "variable": {
+      "foreground": "#F4EFFC"
+    },
+    "parameter": {
+      "foreground": "#83749B",
+      "fontStyle": "italic"
+    },
+    "type.defaultLibrary": {
+      "foreground": "#9AEBFC",
+      "fontStyle": "bold"
+    },
+    "class.defaultLibrary": {
+      "foreground": "#9AEBFC",
+      "fontStyle": "bold"
+    },
+    "interface": {
+      "foreground": "#9AEBFC"
+    },
+    "type": {
+      "foreground": "#9AEBFC"
+    },
+    "typeParameter": {
+      "foreground": "#FFD166",
+      "fontStyle": "italic"
+    },
+    "enum": {
+      "foreground": "#9AEBFC",
+      "fontStyle": "bold"
+    },
+    "enumMember": {
+      "foreground": "#AEF380",
+      "fontStyle": "bold"
+    },
+    "function.defaultLibrary": {
+      "foreground": "#D4B4FF",
+      "fontStyle": "bold"
+    },
+    "method.defaultLibrary": {
+      "foreground": "#D4B4FF",
+      "fontStyle": "bold"
+    },
+    "function": {
+      "foreground": "#D4B4FF",
+      "fontStyle": "bold"
+    },
+    "method": {
+      "foreground": "#D4B4FF",
+      "fontStyle": "bold"
+    },
+    "property.readonly": {
+      "foreground": "#E1B8FF"
+    },
+    "property": {
+      "foreground": "#E1B8FF"
+    },
+    "decorator": {
+      "foreground": "#E1B8FF",
+      "fontStyle": "italic"
+    },
+    "macro": {
+      "foreground": "#FF6676",
+      "fontStyle": "bold"
+    },
+    "namespace": {
+      "foreground": "#9AEBFC"
+    }
+  },
   "colors": {
     "focusBorder": "#D4B4FF",
     "foreground": "#F4EFFC",

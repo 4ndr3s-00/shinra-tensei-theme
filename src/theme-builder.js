@@ -4,6 +4,81 @@ module.exports = function buildTheme(palette) {
     name: palette.name,
     type: "dark",
     semanticHighlighting: true,
+    semanticTokenColors: {
+      "variable.readonly": {
+        "foreground": palette.fg
+      },
+      "variable.readonly.defaultLibrary": {
+        "foreground": palette.secondary,
+        "fontStyle": "bold"
+      },
+      "variable": {
+        "foreground": palette.fg
+      },
+      "parameter": {
+        "foreground": palette.fgMuted,
+        "fontStyle": "italic"
+      },
+      "type.defaultLibrary": {
+        "foreground": palette.secondary,
+        "fontStyle": "bold"
+      },
+      "class.defaultLibrary": {
+        "foreground": palette.secondary,
+        "fontStyle": "bold"
+      },
+      "interface": {
+        "foreground": palette.secondary
+      },
+      "type": {
+        "foreground": palette.secondary
+      },
+      "typeParameter": {
+        "foreground": palette.amber,
+        "fontStyle": "italic"
+      },
+      "enum": {
+        "foreground": palette.secondary,
+        "fontStyle": "bold"
+      },
+      "enumMember": {
+        "foreground": palette.green,
+        "fontStyle": "bold"
+      },
+      "function.defaultLibrary": {
+        "foreground": palette.primary,
+        "fontStyle": "bold"
+      },
+      "method.defaultLibrary": {
+        "foreground": palette.primary,
+        "fontStyle": "bold"
+      },
+      "function": {
+        "foreground": palette.primary,
+        "fontStyle": "bold"
+      },
+      "method": {
+        "foreground": palette.primary,
+        "fontStyle": "bold"
+      },
+      "property.readonly": {
+        "foreground": palette.mauve
+      },
+      "property": {
+        "foreground": palette.mauve
+      },
+      "decorator": {
+        "foreground": palette.mauve,
+        "fontStyle": "italic"
+      },
+      "macro": {
+        "foreground": palette.tertiary,
+        "fontStyle": "bold"
+      },
+      "namespace": {
+        "foreground": palette.secondary
+      }
+    },
     colors: {
       "focusBorder": palette.primary,
       "foreground": palette.fg,

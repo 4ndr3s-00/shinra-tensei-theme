@@ -2,6 +2,81 @@
   "name": "Shinra Tensei (Rinnegan)",
   "type": "dark",
   "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "variable.readonly": {
+      "foreground": "#E4DEEE"
+    },
+    "variable.readonly.defaultLibrary": {
+      "foreground": "#89DCEB",
+      "fontStyle": "bold"
+    },
+    "variable": {
+      "foreground": "#E4DEEE"
+    },
+    "parameter": {
+      "foreground": "#695F77",
+      "fontStyle": "italic"
+    },
+    "type.defaultLibrary": {
+      "foreground": "#89DCEB",
+      "fontStyle": "bold"
+    },
+    "class.defaultLibrary": {
+      "foreground": "#89DCEB",
+      "fontStyle": "bold"
+    },
+    "interface": {
+      "foreground": "#89DCEB"
+    },
+    "type": {
+      "foreground": "#89DCEB"
+    },
+    "typeParameter": {
+      "foreground": "#E5C07B",
+      "fontStyle": "italic"
+    },
+    "enum": {
+      "foreground": "#89DCEB",
+      "fontStyle": "bold"
+    },
+    "enumMember": {
+      "foreground": "#A6D189",
+      "fontStyle": "bold"
+    },
+    "function.defaultLibrary": {
+      "foreground": "#BFA5D9",
+      "fontStyle": "bold"
+    },
+    "method.defaultLibrary": {
+      "foreground": "#BFA5D9",
+      "fontStyle": "bold"
+    },
+    "function": {
+      "foreground": "#BFA5D9",
+      "fontStyle": "bold"
+    },
+    "method": {
+      "foreground": "#BFA5D9",
+      "fontStyle": "bold"
+    },
+    "property.readonly": {
+      "foreground": "#C3A6E1"
+    },
+    "property": {
+      "foreground": "#C3A6E1"
+    },
+    "decorator": {
+      "foreground": "#C3A6E1",
+      "fontStyle": "italic"
+    },
+    "macro": {
+      "foreground": "#ED7882",
+      "fontStyle": "bold"
+    },
+    "namespace": {
+      "foreground": "#89DCEB"
+    }
+  },
   "colors": {
     "focusBorder": "#BFA5D9",
     "foreground": "#E4DEEE",

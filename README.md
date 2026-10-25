@@ -14,6 +14,10 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-ED7882?style=flat-square" alt="License"></a>
 </p>
 
+<p align="center">
+  <img src="assets/theme-showcase.png" alt="Shinra Tensei Theme Showcase" width="100%" />
+</p>
+
 ---
 
 ## 👁️ Overview
@@ -22,8 +26,9 @@
 
 It includes:
 - **Three Theme Flavors**: *Shinra Tensei (Rinnegan)* (Balanced), *Shinra Tensei Soft* (Amegakure Rain), and *Shinra Tensei Intense* (Chibaku Tensei).
-- **Comprehensive Syntax Grammar**: Fine-tuned highlighting for modern HTML, CSS/SCSS, JavaScript, TypeScript, React, Next.js, Vue, Python, and Java (Spring Boot).
-- **Built-in `Shinra Tensei Icons`**: Custom vector icon theme for files and folders.
+- **Semantic Highlighting V2**: LSP-powered distinctions for `const` vs `let`, native library types vs user models, generics (`<T, K, V>`), and runtime globals.
+- **Comprehensive Syntax Grammar**: Fine-tuned highlighting for modern HTML, CSS/SCSS, JavaScript, TypeScript, React, Next.js, Vue, Python, Rust, Go, and Java.
+- **Built-in `Shinra Tensei Icons` Suite**: 656 vector icons crafted on a native 16×16 pixel grid for razor-sharp visual clarity without distortion.
 - **Simulated Transparency / Blurred Backdrop**: Optional zero-transparency background support.
 
 ---
@@ -75,10 +80,10 @@ It includes:
 
 ### Via VSIX (Direct Download)
 
-1. Download [`shinra-tensei-theme-1.2.0.vsix`](https://github.com/4ndr3s-00/shinra-tensei-theme/releases/latest) from the latest release.
+1. Download [`shinra-tensei-theme-1.3.0.vsix`](https://github.com/4ndr3s-00/shinra-tensei-theme/releases/latest) from the latest release.
 2. Install via terminal:
    ```bash
-   code --install-extension shinra-tensei-theme-1.2.0.vsix
+   code --install-extension shinra-tensei-theme-1.3.0.vsix
    ```
    *(Or in VS Code: Extensions view `...` → **Install from VSIX...**)*
 
@@ -91,12 +96,24 @@ It includes:
 
 ---
 
-## 📂 Shinra Tensei Icons
+## 📂 Shinra Tensei Icons Suite
 
-Shinra Tensei bundles an official custom vector icon theme designed specifically for the dark obsidian canvas:
+Shinra Tensei includes a comprehensive vector icon suite containing **656 crisp icons** tailored for modern development:
 
-- **Folders**: Obsidian surfaces with luminous lilac rims, root status indicators, and Rinnegan concentric ripple pupils.
-- **Files**: Tailored SVG emblems for **JavaScript, TypeScript, React (JSX/TSX), Vue, HTML, CSS/SCSS, Python, Java/Spring Boot, JSON, Markdown, Git, Rust, Go, Shell/Terminal (fish, sh, bash)**, and configurations.
+- **Mathematical 16×16 Pixel Grid**: Pixel-perfect vector paths (`viewBox="0 0 16 16"`) eliminate blurry edges and distortion in compact file trees.
+- **Deep Obsidian & Lilac Folders**: Distinct open and closed folder states with luminous accents and Rinnegan pupil markers.
+- **Vibrant File Badges**: Dedicated brand-accurate yet obsidian-harmonized emblems for JavaScript, TypeScript, React, Python, Rust, Go, Java, Docker, Git, Kubernetes, Fish, Bash, and hundreds of language and framework extensions.
+
+---
+
+## 🧠 Semantic Highlighting V2 (LSP Engine)
+
+Shinra Tensei features full Language Server Protocol (LSP) semantic token support:
+- **Inmutability Recognition**: `variable.readonly` distinguishes immutable `const` variables from mutable `let` and `var`.
+- **System vs Domain Models**: `type.defaultLibrary` and `class.defaultLibrary` distinguish native standard library types (`Promise`, `Array`, `Map`, `dict`, `List`) from your custom interfaces and domain classes.
+- **Type Parameters & Generics**: Dedicated accents for generic type parameters (`<T, K, V>`).
+- **Enumerations**: Distinct highlighting for `enumMember` constants.
+- **Runtime Globals**: Global functions like `fetch`, `setTimeout`, and `console.log` are identified without colliding with local function names.
 
 ---
 
@@ -112,6 +129,20 @@ To get the full developer experience with semantic tokens and font ligatures, ad
   "editor.fontLigatures": true,
   "editor.semanticHighlighting.enabled": true
 }
+```
+
+---
+
+## 🧪 Development & Quality Assurance
+
+The extension includes a standalone zero-dependency test suite that validates the theme structure, color consistency, and all 656 vector icons:
+
+```bash
+# Validate themes and verify all 656 icons
+npm test
+
+# Rebuild all theme JSON files from source palettes
+npm run build
 ```
 
 ---
