@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Open Folder Back flap -->
+  <path d="M2.5 5.5C2.5 4.67 3.17 4 4 4H9.2C9.65 4 10.08 4.2 10.36 4.54L11.8 6.27C12.08 6.6 12.51 6.8 12.96 6.8H20C20.83 6.8 21.5 7.47 21.5 8.3V12H2.5V5.5Z" fill="#15121D" stroke="#8C795A" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Front open tab -->
+  <path d="M1.8 19.5L4.2 10.5C4.38 9.92 4.92 9.5 5.53 9.5H21.8C22.6 9.5 23.18 10.28 22.95 11.05L20.8 18.55C20.6 19.2 20.02 19.65 19.34 19.65H2.8C2.18 19.65 1.7 19.98 1.8 19.5Z" fill="#221C2F" stroke="#E5C07B" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Media Frame on open tab -->
+  <rect x="7.8" y="12.5" width="8.5" height="5.5" rx="0.8" fill="#1C1826" stroke="#E5C07B" stroke-width="0.9"/>
+  <circle cx="10" cy="14" r="0.8" fill="#89DCEB"/>
+  <path d="M8.5 17L10.8 14.8L12.5 16.2L14.2 14.2L15.5 17H8.5Z" fill="#BFA5D9" opacity="0.8"/>
+</svg>

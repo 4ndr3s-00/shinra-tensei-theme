@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Closed Folder Base -->
+  <path d="M2.5 5.5C2.5 4.67 3.17 4 4 4H9.2C9.65 4 10.08 4.2 10.36 4.54L11.8 6.27C12.08 6.6 12.51 6.8 12.96 6.8H20C20.83 6.8 21.5 7.47 21.5 8.3V18.5C21.5 19.33 20.83 20 20 20H4C3.17 20 2.5 19.33 2.5 18.5V5.5Z" fill="#181522" stroke="#89DCEB" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- UI Window Glyph -->
+  <rect x="7" y="10" width="10" height="7.5" rx="1.2" fill="#1F1A2C" stroke="#89DCEB" stroke-width="1"/>
+  <circle cx="8.8" cy="11.8" r="0.6" fill="#ED7882"/>
+  <circle cx="10.5" cy="11.8" r="0.6" fill="#E5C07B"/>
+  <circle cx="12.2" cy="11.8" r="0.6" fill="#A6D189"/>
+  <!-- Window split layout -->
+  <line x1="7" y1="13.2" x2="17" y2="13.2" stroke="#89DCEB" stroke-width="0.8"/>
+  <rect x="8.5" y="14.4" width="2.8" height="1.8" rx="0.4" fill="#89DCEB" opacity="0.6"/>
+  <line x1="12.5" y1="14.8" x2="15.5" y2="14.8" stroke="#BFA5D9" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="12.5" y1="15.8" x2="14.8" y2="15.8" stroke="#BFA5D9" stroke-width="0.8" stroke-linecap="round"/>
+</svg>

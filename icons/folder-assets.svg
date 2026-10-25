@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Closed Folder Base -->
+  <path d="M2.5 5.5C2.5 4.67 3.17 4 4 4H9.2C9.65 4 10.08 4.2 10.36 4.54L11.8 6.27C12.08 6.6 12.51 6.8 12.96 6.8H20C20.83 6.8 21.5 7.47 21.5 8.3V18.5C21.5 19.33 20.83 20 20 20H4C3.17 20 2.5 19.33 2.5 18.5V5.5Z" fill="#181522" stroke="#E5C07B" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Image Frame -->
+  <rect x="7" y="10.5" width="10" height="7" rx="1" fill="#1E192B" stroke="#E5C07B" stroke-width="1"/>
+  <!-- Sun/Moon orb -->
+  <circle cx="9.5" cy="12.5" r="1" fill="#89DCEB"/>
+  <!-- Mountain silhouette -->
+  <path d="M7.8 16.5L10.5 13.8L12.5 15.5L14.5 13L16.2 16.5H7.8Z" fill="#BFA5D9" opacity="0.8"/>
+</svg>

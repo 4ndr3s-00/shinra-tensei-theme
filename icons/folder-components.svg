@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Closed Folder Base -->
+  <path d="M2.5 5.5C2.5 4.67 3.17 4 4 4H9.2C9.65 4 10.08 4.2 10.36 4.54L11.8 6.27C12.08 6.6 12.51 6.8 12.96 6.8H20C20.83 6.8 21.5 7.47 21.5 8.3V18.5C21.5 19.33 20.83 20 20 20H4C3.17 20 2.5 19.33 2.5 18.5V5.5Z" fill="#181522" stroke="#C3A6E1" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Modular Component Blocks -->
+  <rect x="7" y="10" width="4.5" height="4.5" rx="0.8" fill="#1F192C" stroke="#C3A6E1" stroke-width="1"/>
+  <circle cx="9.25" cy="12.25" r="0.9" fill="#BFA5D9"/>
+  <rect x="12.5" y="10" width="4.5" height="4.5" rx="0.8" fill="#1F192C" stroke="#89DCEB" stroke-width="1"/>
+  <circle cx="14.75" cy="12.25" r="0.9" fill="#89DCEB"/>
+  <rect x="9.75" y="13.8" width="4.5" height="4.5" rx="0.8" fill="#251C33" stroke="#ED7882" stroke-width="1"/>
+  <circle cx="12" cy="16.05" r="0.9" fill="#ED7882"/>
+</svg>

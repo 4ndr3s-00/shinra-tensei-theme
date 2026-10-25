@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- Closed Folder Base -->
+  <path d="M2.5 5.5C2.5 4.67 3.17 4 4 4H9.2C9.65 4 10.08 4.2 10.36 4.54L11.8 6.27C12.08 6.6 12.51 6.8 12.96 6.8H20C20.83 6.8 21.5 7.47 21.5 8.3V18.5C21.5 19.33 20.83 20 20 20H4C3.17 20 2.5 19.33 2.5 18.5V5.5Z" fill="#181522" stroke="#89DCEB" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Globe Circle -->
+  <circle cx="12" cy="14" r="4.2" stroke="#89DCEB" stroke-width="1.1" fill="#1C182A"/>
+  <!-- Equator Line -->
+  <line x1="7.8" y1="14" x2="16.2" y2="14" stroke="#89DCEB" stroke-width="0.9"/>
+  <!-- Longitude Ellipse -->
+  <ellipse cx="12" cy="14" rx="2" ry="4.2" stroke="#BFA5D9" stroke-width="0.9"/>
+  <!-- Central Rinnegan Pupil -->
+  <circle cx="12" cy="14" r="0.7" fill="#89DCEB"/>
+</svg>
