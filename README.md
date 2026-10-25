@@ -22,9 +22,20 @@
 **Shinra Tensei** is built around eye comfort, high contrast, and visual harmony. It replaces washed-out greys and harsh pitch blacks with a deep obsidian canvas (`#131118`) infused with a cold 5% violet undertone, paired with atmospheric chakra accents derived directly from Amegakure (The Hidden Rain) and the concentric ripple eyes of the Rinnegan.
 
 It includes:
+- **Three Theme Flavors**: *Shinra Tensei (Rinnegan)* (Balanced), *Shinra Tensei Soft* (Amegakure Rain), and *Shinra Tensei Intense* (Chibaku Tensei).
 - **Comprehensive Syntax Grammar**: Fine-tuned highlighting for modern HTML, CSS/SCSS, JavaScript, TypeScript, React, Next.js, Vue, Python, and Java (Spring Boot).
 - **Built-in `Shinra Tensei Icons`**: Custom vector icon theme for files and folders.
 - **Simulated Transparency / Blurred Backdrop**: Optional zero-transparency background support.
+
+---
+
+## ⚡ Theme Variants
+
+| Variant | Atmosphere | Canvas Hex | Accent | Ideal For |
+| :--- | :--- | :---: | :---: | :--- |
+| **Shinra Tensei (Rinnegan)** | Balanced & Elegant | `#131118` | `#BFA5D9` (Lilac) | Daily coding, balanced contrast |
+| **Shinra Tensei Soft** | Amegakure Rain | `#181620` | `#B59CCE` (Muted) | Late-night marathons, low glare |
+| **Shinra Tensei Intense** | Chibaku Tensei | `#0A090E` | `#D4B4FF` (Vivid) | OLED displays, maximum contrast & pop |
 
 ---
 

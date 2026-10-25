@@ -33,12 +33,27 @@
   "engines": {
     "vscode": "^1.60.0"
   },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "package": "vsce package",
+    "vscode:prepublish": "npm run build"
+  },
   "contributes": {
     "themes": [
       {
         "label": "Shinra Tensei (Rinnegan)",
         "uiTheme": "vs-dark",
         "path": "./themes/shinra-tensei-color-theme.json"
+      },
+      {
+        "label": "Shinra Tensei Soft (Amegakure Rain)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shinra-tensei-soft-color-theme.json"
+      },
+      {
+        "label": "Shinra Tensei Intense (Chibaku Tensei)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shinra-tensei-intense-color-theme.json"
       }
     ],
     "iconThemes": [
@@ -48,5 +63,8 @@
         "path": "./icons/shinra-tensei-icons.json"
       }
     ]
+  },
+  "devDependencies": {
+    "js-yaml": "^5.5.0"
   }
 }
