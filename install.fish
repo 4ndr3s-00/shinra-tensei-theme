@@ -1,8 +1,9 @@
 #!/usr/bin/env fish
 
 set REPO_URL "https://github.com/4ndr3s-00/shinra-tensei-theme.git"
-set DEST_DIR "$HOME/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0"
+set DEST_DIR "$HOME/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.2.0"
 set LEGACY_DIR "$HOME/.vscode/extensions/shinra-tensei-theme"
+set V100_DIR "$HOME/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0"
 
 set_color bfa5d9
 echo "   _____ __    _                    ______                      _ "
@@ -12,14 +13,21 @@ echo " ___/ / / / / / / / / /  / /_/ /   / / /  __/ / / (__  )  __/ /  "
 echo "/____/_/ /_/_/_/ /_/_/   \\__,_/   /_/  \\___/_/ /_/____/\\___/_/   "
 set_color normal
 
-echo "Instalando Shinra Tensei VS Code Theme..."
+echo "Instalando Shinra Tensei VS Code Theme v1.2.0..."
 
-# Limpiar versión legada si existía
+# Limpiar versiones legadas si existían
 if test -d "$LEGACY_DIR"; and not test -d "$DEST_DIR"
-    echo "Migrando instalación anterior a formato de VS Code..."
+    echo "Migrando instalación anterior a versión 1.2.0..."
     mv "$LEGACY_DIR" "$DEST_DIR"
-else if test -d "$LEGACY_DIR"; and test -d "$DEST_DIR"
+else if test -d "$LEGACY_DIR"
     rm -rf "$LEGACY_DIR"
+end
+
+if test -d "$V100_DIR"; and not test -d "$DEST_DIR"
+    echo "Actualizando instalación 1.0.0 a 1.2.0..."
+    mv "$V100_DIR" "$DEST_DIR"
+else if test -d "$V100_DIR"
+    rm -rf "$V100_DIR"
 end
 
 # 1. Clonar o actualizar repositorio
@@ -91,7 +99,7 @@ end
 
 set_color green
 echo ""
-echo "✔ ¡Extensión instalada con éxito en ~/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.0.0!"
+echo "✔ ¡Extensión instalada con éxito en ~/.vscode/extensions/4ndr3s-00.shinra-tensei-theme-1.2.0!"
 echo "✔ ¡Tema 'Shinra Tensei (Rinnegan)' y paquete de iconos 'Shinra Tensei Icons' activados automáticamente en tu settings.json!"
 set_color normal
 

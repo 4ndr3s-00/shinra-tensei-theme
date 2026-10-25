@@ -1,15 +1,23 @@
 $repoUrl = "https://github.com/4ndr3s-00/shinra-tensei-theme.git"
-$destDir = "$env:USERPROFILE\.vscode\extensions\4ndr3s-00.shinra-tensei-theme-1.0.0"
+$destDir = "$env:USERPROFILE\.vscode\extensions\4ndr3s-00.shinra-tensei-theme-1.2.0"
 $legacyDir = "$env:USERPROFILE\.vscode\extensions\shinra-tensei-theme"
+$v100Dir = "$env:USERPROFILE\.vscode\extensions\4ndr3s-00.shinra-tensei-theme-1.0.0"
 
-Write-Host "Installing Shinra Tensei VS Code Theme..." -ForegroundColor Magenta
+Write-Host "Installing Shinra Tensei VS Code Theme v1.2.0..." -ForegroundColor Magenta
 
-# Clean up legacy folder format if it exists
+# Clean up older folder formats if they exist
 if ((Test-Path $legacyDir) -and (-not (Test-Path $destDir))) {
-    Write-Host "Migrating legacy folder to official VS Code format..." -ForegroundColor Yellow
-    Rename-Item -Path $legacyDir -NewName "4ndr3s-00.shinra-tensei-theme-1.0.0"
-} elseif ((Test-Path $legacyDir) -and (Test-Path $destDir)) {
+    Write-Host "Migrating legacy folder to v1.2.0..." -ForegroundColor Yellow
+    Rename-Item -Path $legacyDir -NewName "4ndr3s-00.shinra-tensei-theme-1.2.0"
+} elseif (Test-Path $legacyDir) {
     Remove-Item -Path $legacyDir -Recurse -Force
+}
+
+if ((Test-Path $v100Dir) -and (-not (Test-Path $destDir))) {
+    Write-Host "Upgrading 1.0.0 folder to v1.2.0..." -ForegroundColor Yellow
+    Rename-Item -Path $v100Dir -NewName "4ndr3s-00.shinra-tensei-theme-1.2.0"
+} elseif (Test-Path $v100Dir) {
+    Remove-Item -Path $v100Dir -Recurse -Force
 }
 
 # 1. Clone or update repository
